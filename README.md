@@ -51,7 +51,7 @@ Autres Bibliothèques
 Nous avons recueilli des informations sur le site Trustpilot, une plateforme dédiée aux avis sur les entreprises. Ainsi, nous avons constitué un ensemble de données comprenant 33 563 avis concernant trois sociétés de la catégorie ordinateur et téléphone qui sont les suivantes : Materiel.net, Recommerce.com et Rebuy.
 
 La constitution de notre jeu de données a été effectuée à l'aide de la méthode de web scraping. 
-## Étapes du projetProject Name
+## Étapes du projet
 ....
 
 

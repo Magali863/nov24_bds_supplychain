@@ -38,13 +38,15 @@ Evolutions prochaines du projet :
 
 5. Matplotlib / Seaborn : Bibliothèques de visualisation de données en Python. 
 
-Autres Bibliothèques 
+6. WordCloud: Bibliothèque utilisée pour générer des nuages de mots à partir de textes, permettant de visualiser les mots les plus fréquents dans un corpus.
 
-- Imbalanced-learn : bibliothèque pour le traitement des ensembles de données déséquilibrés.
+7. Statsmodels: Bibliothèque utilisée pour l'estimation de modèles statistiques et l'analyse des données. 
 
-- Scipy : Utilisé pour des opérations scientifiques et techniques, y compris des outils pour l'optimisation et les statistiques.
+8. Imbalanced-learn : bibliothèque pour le traitement des ensembles de données déséquilibrés.
 
-- GridSearchCV / RandSearchCV : Outil de Scikit-learn pour l'optimisation des hyperparamètres.
+9. Scipy : Utilisé pour des opérations scientifiques et techniques, y compris des outils pour l'optimisation et les statistiques.
+
+10. GridSearchCV / RandSearchCV : Outil de Scikit-learn pour l'optimisation des hyperparamètres.
 
 
 ## Dataset

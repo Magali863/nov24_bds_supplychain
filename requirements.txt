@@ -1,0 +1,61 @@
+# Bibliothèques essentielles
+
+# Extraction et manipulation des données
+
+pandas
+numpy 
+BeautifulSoup4
+matplotlib
+seaborn
+datetime
+calendar
+
+
+numpy==1.24.1
+pandas==1.5.3
+scikit-learn==1.2.2
+
+# Visualisation
+matplotlib==3.7.1
+seaborn==0.12.2
+
+# Feature engireering et wordcloud
+matplotlib
+seaborn
+nltk    
+word_tokenize
+stopwords
+RegexpTokenizer
+CountVectorizer
+TfidfVectorizer
+Frenchstemmer
+WordNetlemmatizer
+Wordcloud
+PunktSentenceTokenizer
+Statsmodels.api
+
+# Modèles de machine learning
+train_test_split
+GridSearchCV
+OneHotEncoder
+TfidfVectorizer
+SMOTE
+RandomForestClassifier
+lightgbm
+LogisticRegression
+Classification_report
+confusion_matrix
+accuracy_score
+lightgbm==3.3.2
+xgboost==1.7.3
+
+
+# Modele deep learning
+Camembert
+Flaubert
+RNN ?
+
+
+# Explicabilité du modèle
+shap==0.41.0
+

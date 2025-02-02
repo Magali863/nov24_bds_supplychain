@@ -2,17 +2,12 @@
 
 # Extraction et manipulation des données
 
-pandas
-numpy 
+pandas==2.2.3
+numpy==2.2.1
 BeautifulSoup4
-matplotlib
-seaborn
-datetime
-calendar
-
-
-numpy==1.24.1
-pandas==1.5.3
+matplotlib==3.10.0
+matplotlib-inline==0.1.7
+seaborn==0.13.2
 scikit-learn==1.2.2
 
 # Visualisation
@@ -20,11 +15,12 @@ matplotlib==3.7.1
 seaborn==0.12.2
 
 # Feature engireering et wordcloud
-matplotlib
-seaborn
-nltk    
+matplotlib==3.7.1
+seaborn==0.12.2
+nltk==3.9.1
 word_tokenize
 stopwords
+regex==2024.11.6
 RegexpTokenizer
 CountVectorizer
 TfidfVectorizer
@@ -41,13 +37,11 @@ OneHotEncoder
 TfidfVectorizer
 SMOTE
 RandomForestClassifier
-lightgbm
+lightgbm==4.5.0
 LogisticRegression
 Classification_report
 confusion_matrix
 accuracy_score
-lightgbm==3.3.2
-xgboost==1.7.3
 
 
 # Modele deep learning

@@ -1,45 +1,58 @@
-Project Name
-==============================
 
-This repo is a Starting Pack for DS projects. You can rearrange the structure to make it fits your project.
-Satisfaction client
-Project Organization
-------------
+# Supply Chain Satisfaction des clients
 
-    ├── LICENSE
-    ├── README.md          <- The top-level README for developers using this project.
-    ├── data               <- Should be in your computer but not on Github (only in .gitignore)
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
-    │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
-    │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's name, and a short `-` delimited description, e.g.
-    │                         `1.0-alban-data-exploration`.
-    │
-    ├── references         <- Data dictionaries, manuals, links, and all other explanatory materials.
-    │
-    ├── reports            <- The reports that you'll make during this project as PDF
-    │   └── figures        <- Generated graphics and figures to be used in reporting
-    │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
-    │
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   ├── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │   │   └── visualize.py
+L'objectif de ce projet est de développer un modèle de machine learning capable d'analyser et de prédire la satisfaction client à partir des commentaires des utilisateurs. En analysant les données textuelles des avis et les indicateurs pertinents qui émergent des commentaires, nous cherchons à identifier des tendances positives ou négatives et à évaluer le niveau de satisfaction des clients.
 
---------
+Nous nous interrogeons notamment sur la manière d'améliorer la satisfaction client en procédant à une analyse rapide des commentaires des utilisateurs et en détectant les évolutions de la satisfaction à travers des indicateurs clés.
 
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+
+## Authors
+
+- [@Magali864](https://www.github.com/Magali864)
+- [@octokatherine](https://www.github.com/octokatherine)
+- [@autreAuteur](https://www.github.com/autreAuteur)
+- [@encoreUnAuteur](https://www.github.com/encoreUnAuteur)
+
+## Fonctionnalités
+
+- Analyse des Commentaires : Extraction et traitement des données textuelles issues des avis clients.
+
+- Prédiction de la Satisfaction : Utilisation de modèles de machine learning pour prédire le niveau de satisfaction des clients.
+
+
+Evolutions prochaines du projet :
+- Visualisation des Tendances : Outils de visualisation pour représenter les tendances de satisfaction au fil du temps.
+
+- Rapport d'Analyse : Génération de rapports détaillant les résultats des analyses et des prédictions.
+## Bibliothèques et Outils : Ce Que Nous Utilisons
+
+
+
+1. Python : langage de programmation
+
+2. Pandas : bibliothèque Python pour la manipulation et l'analyse de données
+
+3. Scikit-learn : bibliothèque Python pour le machine learning
+
+4. NLTK / SpaCy: Bibliothèques pour le traitement du langage naturel (NLP).
+
+5. Matplotlib / Seaborn : Bibliothèques de visualisation de données en Python. 
+
+Autres Bibliothèques 
+
+- Imbalanced-learn : bibliothèque pour le traitement des ensembles de données déséquilibrés.
+
+- Scipy : Utilisé pour des opérations scientifiques et techniques, y compris des outils pour l'optimisation et les statistiques.
+
+- GridSearchCV / RandSearchCV : Outil de Scikit-learn pour l'optimisation des hyperparamètres.
+
+
+## Dataset
+Nous avons recueilli des informations sur le site Trustpilot, une plateforme dédiée aux avis sur les entreprises. Ainsi, nous avons constitué un ensemble de données comprenant 33 563 avis concernant trois sociétés de la catégorie ordinateur et téléphone qui sont les suivantes : Materiel.net, Recommerce.com et Rebuy.
+
+La constitution de notre jeu de données a été effectuée à l'aide de la méthode de web scraping. 
+## Étapes du projetProject Name
+....
+
+
+

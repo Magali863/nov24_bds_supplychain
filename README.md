@@ -21,7 +21,7 @@ La constitution de notre jeu de données a été effectuée à l'aide de la mét
 Cette procédure opérationnelle décrit les étapes pour créer un DataFrame à partir de données scrappées, effectuer le préprocessing, réaliser des visualisations, puis appliquer des techniques de machine learning et de deep learning afin de trouver la meilleure modélisation.
 
  
-      Étape 1 : Création du DataFrame - Webscraping
+      **Étape 1 : Création du DataFrame - Webscraping**
 
 Collecte des données :
    - Utilisation de webscraping BeautifulSoup pour extraire les données souhaitées à    partir d'une source web.
@@ -51,11 +51,14 @@ Visualisation des distributions des variables.
         Étape 4 : Feature Engineering
 
 - Suppression des colonnes inutiles :
-    - Identifier et supprimer les colonnes qui ne seront pas utiles pour la modélisation.
+ 
+     Identifier et supprimer les colonnes qui ne seront pas utiles pour la modélisation.
 - Création de nouvelles caractéristiques :
-    - Développer des nouvelles variables qui pourraient améliorer la performance du modèle.
-- Analyse de Corrélation
-- Analyser la corrélation entre les variables explicatives et la variable cible
+  
+     Développer des nouvelles variables qui pourraient améliorer la performance du modèle.
+- Analyse de Corrélation :
+  
+     Analyser la corrélation entre les variables explicatives et la variable cible
 - 
 
         Étape 5 : Modélisation 1

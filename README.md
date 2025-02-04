@@ -55,5 +55,5 @@ La constitution de notre jeu de données a été effectuée à l'aide de la mét
 - [@Magali864](https://www.github.com/Magali864)
 - [@mcdieye](https://github.com/mcdieye)
 - [@DonaBN](https://github.com/DonaBN)
-- [@encoreUnAuteur](https://www.github.com/encoreUnAuteur)
+- [@yassinetazit](https://github.com/yassinetazit)
 

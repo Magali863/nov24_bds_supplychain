@@ -1,27 +1,27 @@
 
-# Supply Chain Satisfaction des clients
+# 🟢🟡🔴 Supply Chain Satisfaction des clients 🟢🟡🔴
 
 L'objectif de ce projet est de développer un modèle de machine learning capable d'analyser et de prédire la satisfaction client à partir des commentaires des utilisateurs. En analysant les données textuelles des avis et les indicateurs pertinents qui émergent des commentaires, nous cherchons à identifier des tendances positives ou négatives et à évaluer le niveau de satisfaction des clients.
 
 Nous nous interrogeons notamment sur la manière d'améliorer la satisfaction client en procédant à une analyse rapide des commentaires des utilisateurs et en détectant les évolutions de la satisfaction à travers des indicateurs clés.
 
 
-## Fonctionnalités du Projet
+## 📌 Fonctionnalités du Projet
 
 - Analyse des Commentaires : Extraction et traitement des données textuelles issues des avis clients.
 
 - Prédiction de la Satisfaction : Utilisation de modèles de machine learning pour prédire le niveau de satisfaction des clients.
-## Données Sources
+## 📁Données Sources
 
 Nous avons recueilli des informations sur le site Trustpilot, une plateforme dédiée aux avis sur les entreprises. Ainsi, nous avons constitué un ensemble de données comprenant 33 563 avis concernant trois sociétés de la catégorie ordinateur et téléphone qui sont les suivantes : Materiel.net, Recommerce.com et Rebuy.
 
 La constitution de notre jeu de données a été effectuée à l'aide de la méthode de web scraping.
-## Mode Opératoire du Projet
+## 🛠Mode Opératoire du Projet
 
 Cette procédure opérationnelle décrit les étapes pour créer un DataFrame à partir de données scrappées, effectuer le préprocessing, réaliser des visualisations, puis appliquer des techniques de machine learning et de deep learning afin de trouver la meilleure modélisation.
 
  
-      Étape 1 : Création du DataFrame - Webscraping
+      💻 Étape 1 : Création du DataFrame - Webscraping
       
 - Collecte des données :
   > Utilisation de webscraping BeautifulSoup pour extraire les données souhaitées à partir d'une source web.
@@ -29,7 +29,7 @@ Cette procédure opérationnelle décrit les étapes pour créer un DataFrame à
   > Convertir les données extraites en un DataFrame à l'aide de pandas.
 >   
 
-     Étape 2 : Préprocessing
+     🛠 Étape 2 : Préprocessing
 
 - Nettoyage :
   > Supprimer les doublons et les valeurs manquantes.
@@ -40,7 +40,7 @@ Cette procédure opérationnelle décrit les étapes pour créer un DataFrame à
   > Utilisation des statistiques descriptives pour explorer les données.
 >
 
-        Étape 3 : Data Visualization
+     📊 Étape 3 : Data Visualization
 
 - Visualisation des distributions des variables.
 
@@ -53,7 +53,7 @@ Cette procédure opérationnelle décrit les étapes pour créer un DataFrame à
   > Notes de satisfaction client = 4 et 5
 > 
 
-        Étape 4 : Feature Engineering
+     🛠 Étape 4 : Feature Engineering
 
 - Suppression des colonnes inutiles :
  
@@ -66,7 +66,7 @@ Cette procédure opérationnelle décrit les étapes pour créer un DataFrame à
      > Analyser la corrélation entre les variables explicatives et la variable cible
  >
 
-        Étape 5 : Modélisation 1
+     🤖 Étape 5 : Modélisation 1
 
 - Préparation des données :
   > Diviser les données en ensembles d'entraînement, de test et de validation.
@@ -86,7 +86,7 @@ Cette procédure opérationnelle décrit les étapes pour créer un DataFrame à
   > Analyser les erreurs et interpréter les résultats
 >
 
-     Étape 6 : Modélisation 2
+     🤖 Étape 6 : Modélisation 2
 
 
 - Intégration de nouvelles caractéristiques NLP :
@@ -98,7 +98,7 @@ Cette procédure opérationnelle décrit les étapes pour créer un DataFrame à
 - Répéter la préparation et la modélisation :
   > Suivre les mêmes étapes de préparation des données et de modélisation que précédemment
 >
-            Étape 7 : Modélisation 3 Binaire
+     🤖 Étape 7 : Modélisation 3 Binaire
 
 - Transformation de la variable cible en un modèle binaire :
   > Valeur 1 pour les notes 1 et 2.
@@ -113,7 +113,7 @@ Cette procédure opérationnelle décrit les étapes pour créer un DataFrame à
   > Effectuer l'optimisation des hyperparamètres, la validation croisée, et l'analyse des erreurs comme précédemment
 > 
 
-            Étape 8 : Modélisation Deep learning
+      🧠 Étape 8 : Modélisation Deep learning
 
 -	Appliquer un modèle de réseau de neurones récurrent avec une couche LSTM (Long Short-Term Memory)
  
@@ -121,7 +121,7 @@ Cette procédure opérationnelle décrit les étapes pour créer un DataFrame à
 
 
 
-## Principales Bibliothèques et Outils Utilisés
+## 📦 Principales Bibliothèques et Outils Utilisés
 
 Python : langage de programmation
 
@@ -146,9 +146,9 @@ Scipy : Utilisé pour des opérations scientifiques et techniques, y compris des
 GridSearchCV / RandSearchCV : Outil de Scikit-learn pour l'optimisation des hyperparamètres.
 ## Auteurs
 
-- [@Magali864](https://www.github.com/Magali864)
-- [@mcdieye](https://github.com/mcdieye)
-- [@DonaBN](https://github.com/DonaBN)
-- [@yassinetazit](https://github.com/yassinetazit)
+- 👨‍💻  [@Magali864](https://www.github.com/Magali864)
+- 👨‍💻 [@mcdieye](https://github.com/mcdieye)
+- 👨‍💻 [@DonaBN](https://github.com/DonaBN)
+- 👨‍💻 [@yassinetazit](https://github.com/yassinetazit)
 
   

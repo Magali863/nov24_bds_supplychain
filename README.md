@@ -22,22 +22,22 @@ Cette procédure opérationnelle décrit les étapes pour créer un DataFrame à
 
  
       Étape 1 : Création du DataFrame - Webscraping
-
-Collecte des données :
-> Utilisation de webscraping BeautifulSoup pour extraire les données souhaitées à partir d'une source web.
-> 
-> Convertir les données extraites en un DataFrame à l'aide de pandas.
-   
+      
+- Collecte des données :
+  > Utilisation de webscraping BeautifulSoup pour extraire les données souhaitées à partir d'une source web.
+  > 
+  > Convertir les données extraites en un DataFrame à l'aide de pandas.
+>   
 
      Étape 2 : Préprocessing
 
-Nettoyage :
-> Supprimer les doublons et les valeurs manquantes.
-> 
-> Corriger les types de données (par exemple, convertir les dates en format datetime).
+- Nettoyage :
+  > Supprimer les doublons et les valeurs manquantes.
+  > 
+  > Corriger les types de données (par exemple, convertir les dates en format datetime).
 
-Exploration de la base scrappée :
-> Utilisation des statistiques descriptives pour explorer les données (moyennes, médianes, etc.)
+- Exploration de la base scrappée :
+  > Utilisation des statistiques descriptives pour explorer les données.
 >
 
         Étape 3 : Data Visualization
@@ -84,20 +84,20 @@ Exploration de la base scrappée :
   > Effectuer une validation croisée pour évaluer la robustesse du modèle.
   > 
   > Analyser les erreurs et interpréter les résultats
-  >
+>
 
-            Étape 6 : Modélisation 2
+     Étape 6 : Modélisation 2
 
 
 - Intégration de nouvelles caractéristiques NLP :
   >
   >Caractéristique pour détecter la négation dans le titre du commentaire.
   >
-  > Caractéristique pour classer les sentiments en utilisant un modèle BERT   ("nlptown/bert-base-multilingual-uncased-sentiment")
+  > Caractéristique pour classer les sentiments en utilisant un modèle BERT ("nlptown/bert-base-multilingual-uncased-sentiment")
 
 - Répéter la préparation et la modélisation :
   > Suivre les mêmes étapes de préparation des données et de modélisation que précédemment
-
+>
             Étape 7 : Modélisation 3 Binaire
 
 - Transformation de la variable cible en un modèle binaire :
@@ -111,11 +111,13 @@ Exploration de la base scrappée :
       LightGBM Classifier
   > 
   > Effectuer l'optimisation des hyperparamètres, la validation croisée, et l'analyse des erreurs comme précédemment
-
+> 
 
             Étape 8 : Modélisation Deep learning
 
--	Appliquer un modèle de réseau de neurones récurrent avec une couche LSTM (Long Short-Term Memory) implémenté à l'aide de la bibliothèque Keras de TensorFlow. 
+-	Appliquer un modèle de réseau de neurones récurrent avec une couche LSTM (Long Short-Term Memory)
+ 
+    >à l'aide de la bibliothèque Keras de TensorFlow. 
 
 
 

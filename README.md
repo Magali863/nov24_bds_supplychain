@@ -1,5 +1,5 @@
 
-# 🟢🟡🔴 Supply Chain Satisfaction des clients 🟢🟡🔴
+# 🟢🟡🔴 Supply Chain Satisfaction des clients 🔴🟡🟢
 
 L'objectif de ce projet est de développer un modèle de machine learning capable d'analyser et de prédire la satisfaction client à partir des commentaires des utilisateurs. En analysant les données textuelles des avis et les indicateurs pertinents qui émergent des commentaires, nous cherchons à identifier des tendances positives ou négatives et à évaluer le niveau de satisfaction des clients.
 

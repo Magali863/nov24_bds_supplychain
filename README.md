@@ -53,6 +53,6 @@ La constitution de notre jeu de données a été effectuée à l'aide de la mét
 ## Authors
 
 - [@Magali864](https://www.github.com/Magali864)
-- [@octokatherine](https://www.github.com/octokatherine)
+- [@mcdieye](https://github.com/mcdieye)
 - [@autreAuteur](https://www.github.com/autreAuteur)
 - [@encoreUnAuteur](https://www.github.com/encoreUnAuteur)

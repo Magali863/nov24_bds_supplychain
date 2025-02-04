@@ -21,86 +21,97 @@ La constitution de notre jeu de données a été effectuée à l'aide de la mét
 Cette procédure opérationnelle décrit les étapes pour créer un DataFrame à partir de données scrappées, effectuer le préprocessing, réaliser des visualisations, puis appliquer des techniques de machine learning et de deep learning afin de trouver la meilleure modélisation.
 
  
-      **Étape 1 : Création du DataFrame - Webscraping**
+      Étape 1 : Création du DataFrame - Webscraping
 
 Collecte des données :
-   - Utilisation de webscraping BeautifulSoup pour extraire les données souhaitées à    partir d'une source web.
-   - Convertir les données extraites en un DataFrame à l'aide de pandas.
-   - 
+> Utilisation de webscraping BeautifulSoup pour extraire les données souhaitées à partir d'une source web.
+> 
+> Convertir les données extraites en un DataFrame à l'aide de pandas.
+   
 
      Étape 2 : Préprocessing
 
 Nettoyage :
-- Supprimer les doublons et les valeurs manquantes.
-- Corriger les types de données si nécessaire (par exemple, convertir les dates en format datetime).
+> Supprimer les doublons et les valeurs manquantes.
+> 
+> Corriger les types de données (par exemple, convertir les dates en format datetime).
 
 Exploration de la base scrappée :
-- Utilisation des statistiques descriptives pour explorer les données (moyennes, médianes, etc.)
-- 
+> Utilisation des statistiques descriptives pour explorer les données (moyennes, médianes, etc.)
+>
 
         Étape 3 : Data Visualization
 
-Visualisation des distributions des variables.
+- Visualisation des distributions des variables.
 
 - WordCloud pour visualiser les mots les plus fréquents dans les commentaires selon les notes de satisfaction client :
-  - Notes de satisfaction client = 1 et 2
-  - Note de satisfaction client = 3
-  - Notes de satisfaction client = 4 et 5
--
+  
+  > Notes de satisfaction client = 1 et 2
+  > 
+  > Note de satisfaction client = 3
+  > 
+  > Notes de satisfaction client = 4 et 5
+> 
 
         Étape 4 : Feature Engineering
 
 - Suppression des colonnes inutiles :
  
-     Identifier et supprimer les colonnes qui ne seront pas utiles pour la modélisation.
+    > Identifier et supprimer les colonnes qui ne seront pas utiles pour la modélisation.
 - Création de nouvelles caractéristiques :
   
-     Développer des nouvelles variables qui pourraient améliorer la performance du modèle.
+     > Développer des nouvelles variables qui pourraient améliorer la performance du modèle.
 - Analyse de Corrélation :
   
-     Analyser la corrélation entre les variables explicatives et la variable cible
-- 
+     > Analyser la corrélation entre les variables explicatives et la variable cible
+ >
 
         Étape 5 : Modélisation 1
 
 - Préparation des données :
-   - Diviser les données en ensembles d'entraînement, de test et de validation.
-   - Normaliser et encoder les données.
-   - Equilibrer l’ensemble d’entrainement si le jeu de données est déséquilibré
+  > Diviser les données en ensembles d'entraînement, de test et de validation.
+  > Normaliser et encoder les données.
+  > Equilibrer l’ensemble d’entrainement si le jeu de données est déséquilibré
    
 - Modélisation :
-   - Tester plusieurs modèles de classification : 
+  >Tester plusieurs modèles de classification : 
      RandomForestClassifier,
      LightGBM Classifier,
      Régression logistique.
-   - Optimiser les hyperparamètres à l'aide de RandomizedSearchCV.
-   - Effectuer une validation croisée pour évaluer la robustesse du modèle.
-   - Analyser les erreurs et interpréter les résultats
--
+  >
+  > Optimiser les hyperparamètres à l'aide de RandomizedSearchCV.
+  > 
+  > Effectuer une validation croisée pour évaluer la robustesse du modèle.
+  > 
+  > Analyser les erreurs et interpréter les résultats
+  >
 
             Étape 6 : Modélisation 2
 
 
 - Intégration de nouvelles caractéristiques NLP :
-   - Caractéristique pour détecter la négation dans le titre du commentaire.
-   - Caractéristique pour classer les sentiments en utilisant un modèle BERT   ("nlptown/bert-base-multilingual-uncased-sentiment")
+  >
+  >Caractéristique pour détecter la négation dans le titre du commentaire.
+  >
+  > Caractéristique pour classer les sentiments en utilisant un modèle BERT   ("nlptown/bert-base-multilingual-uncased-sentiment")
 
 - Répéter la préparation et la modélisation :
-   - Suivre les mêmes étapes de préparation des données et de modélisation que précédemment
--
+  > Suivre les mêmes étapes de préparation des données et de modélisation que précédemment
 
             Étape 7 : Modélisation 3 Binaire
 
 - Transformation de la variable cible en un modèle binaire :
-     - Valeur 1 pour les notes 1 et 2.
-     - Valeur 2 pour les notes 3, 4 et 5
+  > Valeur 1 pour les notes 1 et 2.
+  > 
+  > Valeur 2 pour les notes 3, 4 et 5
 
 - Modélisation :
-    - Tester plusieurs modèles de classification : 
+  > Tester plusieurs modèles de classification : 
       RandomForestClassifier, 
       LightGBM Classifier
-   - Effectuer l'optimisation des hyperparamètres, la validation croisée, et l'analyse des erreurs comme précédemment
--
+  > 
+  > Effectuer l'optimisation des hyperparamètres, la validation croisée, et l'analyse des erreurs comme précédemment
+
 
             Étape 8 : Modélisation Deep learning
 

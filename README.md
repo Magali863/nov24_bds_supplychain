@@ -11,7 +11,7 @@ Nous nous interrogeons notamment sur la manière d'améliorer la satisfaction cl
 - Analyse des Commentaires : Extraction et traitement des données textuelles issues des avis clients.
 
 - Prédiction de la Satisfaction : Utilisation de modèles de machine learning pour prédire le niveau de satisfaction des clients.
-## 📁Données Sources
+## 📁 Données Sources
 
 Nous avons recueilli des informations sur le site Trustpilot, une plateforme dédiée aux avis sur les entreprises. Ainsi, nous avons constitué un ensemble de données comprenant 33 563 avis concernant trois sociétés de la catégorie ordinateur et téléphone qui sont les suivantes : Materiel.net, Recommerce.com et Rebuy.
 Vous trouverez ci-dessous la réparation des commentaires par entreprise : 
@@ -20,7 +20,7 @@ Vous trouverez ci-dessous la réparation des commentaires par entreprise :
 - Recommerce.com ➡️ 2580
 
 La constitution de notre jeu de données a été effectuée à l'aide de la méthode de web scraping.
-## 🛠Mode Opératoire du Projet
+## 🛠 Mode Opératoire du Projet
 
 Cette procédure opérationnelle décrit les étapes pour créer un DataFrame à partir de données scrappées, effectuer le préprocessing, réaliser des visualisations, puis appliquer des techniques de machine learning et de deep learning afin de trouver la meilleure modélisation.
 
@@ -32,7 +32,7 @@ Cette procédure opérationnelle décrit les étapes pour créer un DataFrame à
   > 
   > Convertir les données extraites en un DataFrame à l'aide de pandas.
   >
-- Références notebook sur Github :
+- 🌐 Références notebook sur Github :
   >
   >  https://github.com/DataScientest-Studio/nov24_bds_supplychain/blob/main/notebooks/1_code%20%20WEB_SCRAPING%20sur%20le%20site%20truspilot_VD.ipynb
 >   
@@ -47,7 +47,7 @@ Cette procédure opérationnelle décrit les étapes pour créer un DataFrame à
 - Exploration de la base scrappée :
   > Utilisation des statistiques descriptives pour explorer les données.
   >
-- Références notebook sur Github :
+- 🌐 Références notebook sur Github :
   >
   > https://github.com/DataScientest-Studio/nov24_bds_supplychain/blob/main/notebooks/2_code%20_EXPLORATION_%26_PREPROCESSING%20_VD.ipynb
 >
@@ -64,7 +64,7 @@ Cette procédure opérationnelle décrit les étapes pour créer un DataFrame à
   > 
   > Notes de satisfaction client = 4 et 5
   >
-- Références notebook sur Github :
+- 🌐 Références notebook sur Github :
   >
   > https://github.com/DataScientest-Studio/nov24_bds_supplychain/blob/main/notebooks/2_code%20_EXPLORATION_%26_PREPROCESSING%20_VD.ipynb
   > 
@@ -83,7 +83,7 @@ Cette procédure opérationnelle décrit les étapes pour créer un DataFrame à
   
      > Analyser la corrélation entre les variables explicatives et la variable cible
      >
-- Références notebook sur Github :
+- 🌐 Références notebook sur Github :
      >
      > https://github.com/DataScientest-Studio/nov24_bds_supplychain/blob/main/notebooks/3_code_FEATURE_ENGINEERING%20_%26_WORDCLOUD_VD.ipynb
      >
@@ -109,7 +109,7 @@ Cette procédure opérationnelle décrit les étapes pour créer un DataFrame à
   > 
   > Analyser les erreurs et interpréter les résultats
   >
-- Références notebook sur Github :
+- 🌐 Références notebook sur Github :
   >
   >https://github.com/DataScientest-Studio/nov24_bds_supplychain/blob/main/notebooks/5_code_MODELISATION%20BASE.ipynb
 >
@@ -126,7 +126,7 @@ Cette procédure opérationnelle décrit les étapes pour créer un DataFrame à
 - Répéter la préparation et la modélisation :
   > Suivre les mêmes étapes de préparation des données et de modélisation que précédemment
   >
-- Références notebook sur Github :
+- 🌐 Références notebook sur Github :
   >
   > https://github.com/DataScientest-Studio/nov24_bds_supplychain/blob/main/notebooks/5.2_code_MODELISATION_AVEC_NLP.ipynb
 >
@@ -145,7 +145,7 @@ Cette procédure opérationnelle décrit les étapes pour créer un DataFrame à
   > 
   > Effectuer l'optimisation des hyperparamètres, la validation croisée, et l'analyse des erreurs comme précédemment
   >
-- Références notebook sur Github :
+- 🌐 Références notebook sur Github :
   >
   > https://github.com/DataScientest-Studio/nov24_bds_supplychain/blob/main/notebooks/5.3_code_MODELISATION_BINAIRE_AVEC_NLP.ipynb
 > 
@@ -156,7 +156,7 @@ Cette procédure opérationnelle décrit les étapes pour créer un DataFrame à
  
     >à l'aide de la bibliothèque Keras de TensorFlow.
     >
-- Références notebook sur Github :
+- 🌐 Références notebook sur Github :
     >
     >https://github.com/DataScientest-Studio/nov24_bds_supplychain/blob/main/notebooks/6_code_MODELISATION_DeepLearning_RRN.ipynb
 
@@ -185,7 +185,7 @@ Imbalanced-learn : bibliothèque Python pour le traitement des ensembles de donn
 Scipy : Utilisé pour des opérations scientifiques et techniques, y compris des outils pour l'optimisation et les statistiques.
 
 GridSearchCV / RandSearchCV : Outil de Scikit-learn pour l'optimisation des hyperparamètres.
-## Auteurs
+## 🖊 Auteurs
 
 - 👨‍💻  [@Magali864](https://www.github.com/Magali864)
 - 👨‍💻 [@mcdieye](https://github.com/mcdieye)

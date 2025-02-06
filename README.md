@@ -31,6 +31,10 @@ Cette procédure opérationnelle décrit les étapes pour créer un DataFrame à
   > Utilisation de webscraping BeautifulSoup pour extraire les données souhaitées à partir d'une source web.
   > 
   > Convertir les données extraites en un DataFrame à l'aide de pandas.
+  >
+- Références notebook sur Github :
+  >
+  >  https://github.com/DataScientest-Studio/nov24_bds_supplychain/blob/main/notebooks/1_code%20%20WEB_SCRAPING%20sur%20le%20site%20truspilot_VD.ipynb
 >   
 
      🛠 Étape 2 : Préprocessing
@@ -42,6 +46,10 @@ Cette procédure opérationnelle décrit les étapes pour créer un DataFrame à
 
 - Exploration de la base scrappée :
   > Utilisation des statistiques descriptives pour explorer les données.
+  >
+- Références notebook sur Github :
+  >
+  > https://github.com/DataScientest-Studio/nov24_bds_supplychain/blob/main/notebooks/2_code%20_EXPLORATION_%26_PREPROCESSING%20_VD.ipynb
 >
 
      📊 Étape 3 : Data Visualization
@@ -55,6 +63,12 @@ Cette procédure opérationnelle décrit les étapes pour créer un DataFrame à
   > Note de satisfaction client = 3
   > 
   > Notes de satisfaction client = 4 et 5
+  >
+- Références notebook sur Github :
+  >
+  > https://github.com/DataScientest-Studio/nov24_bds_supplychain/blob/main/notebooks/2_code%20_EXPLORATION_%26_PREPROCESSING%20_VD.ipynb
+  > 
+  > https://github.com/DataScientest-Studio/nov24_bds_supplychain/blob/main/notebooks/4_code%20WORDCLOUD%20%26%20Note%20_Satisfaction_%20VD.ipynb
 > 
 
      🛠 Étape 4 : Feature Engineering
@@ -68,6 +82,12 @@ Cette procédure opérationnelle décrit les étapes pour créer un DataFrame à
 - Analyse de Corrélation :
   
      > Analyser la corrélation entre les variables explicatives et la variable cible
+     >
+- Références notebook sur Github :
+     >
+     > https://github.com/DataScientest-Studio/nov24_bds_supplychain/blob/main/notebooks/3_code_FEATURE_ENGINEERING%20_%26_WORDCLOUD_VD.ipynb
+     >
+     >https://github.com/DataScientest-Studio/nov24_bds_supplychain/blob/main/notebooks/Code_Emoticones.ipynb
  >
 
      🤖 Étape 5 : Modélisation 1
@@ -88,6 +108,10 @@ Cette procédure opérationnelle décrit les étapes pour créer un DataFrame à
   > Effectuer une validation croisée pour évaluer la robustesse du modèle.
   > 
   > Analyser les erreurs et interpréter les résultats
+  >
+- Références notebook sur Github :
+  >
+  >https://github.com/DataScientest-Studio/nov24_bds_supplychain/blob/main/notebooks/5_code_MODELISATION%20BASE.ipynb
 >
 
      🤖 Étape 6 : Modélisation 2
@@ -101,6 +125,10 @@ Cette procédure opérationnelle décrit les étapes pour créer un DataFrame à
 
 - Répéter la préparation et la modélisation :
   > Suivre les mêmes étapes de préparation des données et de modélisation que précédemment
+  >
+- Références notebook sur Github :
+  >
+  > https://github.com/DataScientest-Studio/nov24_bds_supplychain/blob/main/notebooks/5.2_code_MODELISATION_AVEC_NLP.ipynb
 >
      🤖 Étape 7 : Modélisation 3 Binaire
 
@@ -108,6 +136,7 @@ Cette procédure opérationnelle décrit les étapes pour créer un DataFrame à
   > Valeur 1 pour les notes 1 et 2.
   > 
   > Valeur 2 pour les notes 3, 4 et 5
+  >
 
 - Modélisation :
   > Tester plusieurs modèles de classification : 
@@ -115,13 +144,21 @@ Cette procédure opérationnelle décrit les étapes pour créer un DataFrame à
       LightGBM Classifier
   > 
   > Effectuer l'optimisation des hyperparamètres, la validation croisée, et l'analyse des erreurs comme précédemment
+  >
+- Références notebook sur Github :
+  >
+  > https://github.com/DataScientest-Studio/nov24_bds_supplychain/blob/main/notebooks/5.3_code_MODELISATION_BINAIRE_AVEC_NLP.ipynb
 > 
 
       🧠 Étape 8 : Modélisation Deep learning
 
 -	Appliquer un modèle de réseau de neurones récurrent avec une couche LSTM (Long Short-Term Memory)
  
-    >à l'aide de la bibliothèque Keras de TensorFlow. 
+    >à l'aide de la bibliothèque Keras de TensorFlow.
+    >
+- Références notebook sur Github :
+    >
+    >https://github.com/DataScientest-Studio/nov24_bds_supplychain/blob/main/notebooks/6_code_MODELISATION_DeepLearning_RRN.ipynb
 
 
 

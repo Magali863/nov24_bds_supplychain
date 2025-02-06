@@ -15,9 +15,9 @@ Nous nous interrogeons notamment sur la manière d'améliorer la satisfaction cl
 
 Nous avons recueilli des informations sur le site Trustpilot, une plateforme dédiée aux avis sur les entreprises. Ainsi, nous avons constitué un ensemble de données comprenant 33 563 avis concernant trois sociétés de la catégorie ordinateur et téléphone qui sont les suivantes : Materiel.net, Recommerce.com et Rebuy.
 Vous trouverez ci-dessous la répartition des commentaires par entreprise : 
-- Materiel.net ➡️ 26.433
-- Rebuy ➡️ 4550
-- Recommerce.com ➡️ 2580
+- Materiel.net ➡️ 26 433
+- Rebuy ➡️ 4 550
+- Recommerce.com ➡️ 2 580
 
 La constitution de notre jeu de données a été effectuée à l'aide de la méthode de web scraping.
 ## 🛠 Mode Opératoire du Projet

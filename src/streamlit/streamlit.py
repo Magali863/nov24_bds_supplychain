@@ -1,3 +1,7 @@
+
+import warnings
+warnings.filterwarnings("ignore", category=DeprecationWarning)
+
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -35,6 +39,9 @@ le = LabelEncoder()
 le2 = LabelEncoder()
 vectorizer = TfidfVectorizer()
 vectorizer2 = TfidfVectorizer()
+
+
+
 
 st.markdown('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">', unsafe_allow_html=True)
 
@@ -78,7 +85,7 @@ pages=["Contexte","Objectif","Web Scraping","Exploration", "Feature engineering"
 page=st.sidebar.radio("Aller vers", pages)
 st.sidebar.write("")
 st.sidebar.write("")
-st.sidebar.image("Truspilot.png", width=200,use_column_width='auto')
+st.sidebar.image("Truspilot.png", width=200,use_container_width='auto')
 
 ########################  PAGE 0 #########################################
 
@@ -105,7 +112,7 @@ La satisfaction client est donc un enjeu majeur pour toute entreprise. Cependant
   
   #Ce projet vise à utiliser des techniques de data science pour <strong>évaluer la satisfaction client</strong>, en analysant les commentaires des clients.
   # Créer trois colonnes
-  col1, col2, col3= st.columns([1,200, 200])
+  col1, col2, col3= st.columns([100,500, 100])
 
    # Placer l'image dans la colonne du milieu
   with col2:
@@ -435,7 +442,9 @@ if page == pages[4]:
     <p style='text-align: center;'></p>
     <hr style="border: 2px solid #1f487e;">
     <p>
-    Pour améliorer notre modèle, certaines colonnes ont été supprimées et des caractéristiques (features) ont été créées à partir des données existantes.
+    Pour améliorer le modèle, certaines colonnes ont été supprimées et des caractéristiques (features) ont été créées à partir des données existantes.
+    <br>
+    Nous avons effectué un prétraitement text mining sur les données textuelles, incluant la normalisation des caractères, la tokenisation, le Stop Words, la lemmatisation et la vectorisation.    
     <br>
     </p>
     """, unsafe_allow_html=True)
@@ -628,7 +637,7 @@ if page == pages[4]:
 
     st.markdown("""
     Après avoir analysé les caractéristiques de notre jeu de données et s'être assuré que les variables soient corrélées à la variable cible. Nous avons préparé les données pour les intégrer dans notre modèle de prédiction des notes.
-    <br>
+      <br>
       """, unsafe_allow_html=True)
     
      # texte à encadrer
@@ -687,54 +696,98 @@ if page == pages[4]:
 if page == pages[5]: 
     # Titre principal
     st.markdown("""
-        <h2 style='color: #1f487e; font-size: 30px; text-align: center;'>📊 Data Visualisation</h2>
+        <h2 style='color: #1f487e; font-size: 30px; text-align: center;'> Data Visualisation</h2>
         <p style='text-align: center;'></p>
         <hr style="border: 2px solid #1f487e;">
     """, unsafe_allow_html=True)
 
 
     # 📈 Répartition des differentes notes
-    st.subheader("📈 Répartition des notes")
-    st.write("Cette visualisation montre la distribution des notes exprimées par les utilisateurs. ")
-    st.image("repartition_note.png", caption="Distribution des notes clients", use_column_width=True)
 
-    # 📌 Répartition des sentiments
-    st.subheader("📌 Répartition des sentiments ")
-    st.write("Cette visualisation montre la distribution des sentiments exprimés dans les commentaires. ")
+    st.markdown("""
+        <h2 style='color: #1f487e; font-size: 26px; text-align: left;'>🟦 Répartition des notes</h2>
+        
+        Cette visualisation montre la distribution des notes exprimées par les utilisateurs
+        <br>       
+    """, unsafe_allow_html=True)
+
+    #st.subheader("📈 Répartition des notes")
+    #st.write("Cette visualisation montre la distribution des notes exprimées par les utilisateurs. ")
+    st.write(" ")
+    st.image("repartition_note.png", caption="Distribution des notes clients", use_container_width=True)
+
+    # 📌 📊Répartition des sentiments
+    st.markdown("""
+        <h2 style='color: #1f487e; font-size: 26px; text-align: left;'>🟦 Répartition des sentiments </h2>
+        
+        Cette visualisation montre la distribution des sentiments exprimés dans les commentaires
+        <br>       
+    """, unsafe_allow_html=True)
+
+    st.write(" ")
+    #st.subheader("📌 Répartition des sentiments ")
+    #st.write("Cette visualisation montre la distribution des sentiments exprimés dans les commentaires. ")
     
     col1, col2 = st.columns(2)
     with col1:
         st.write("🔹 **Repartition des sentiments dans les commentaires**")
-        st.image("sentiment.png", caption="Distribution des sentiments", use_column_width=True)
+        st.image("sentiment.png", caption="Distribution des sentiments", use_container_width=True)
     with col2:
         st.write("🔹 **Répartition des sentiments dans les commentaires selon les notes**")
-        st.image("sentiment2.png", caption="Répartition des sentiments dans les commentaires selon les notes", use_column_width=True)
+        st.image("sentiment2.png", caption="Répartition des sentiments dans les commentaires selon les notes", use_container_width=True)
 
    # 📌 Répartition des tailles de commentaire
-    st.subheader("📌 Répartition de la classe taille de commentaire ")
-    st.write("Cette visualisation montre la répartition des notes par classe de taille de commentaire. ")
+    st.markdown("""
+        <h2 style='color: #1f487e; font-size: 26px; text-align: left;'>🟦 Répartition de la classe taille de commentaire </h2>
+        
+        Cette visualisation montre la répartition des notes par classe de taille de commentaire
+        <br>       
+    """, unsafe_allow_html=True)
+
+    st.write(" ")
+
+    #st.subheader("📌 Répartition de la classe taille de commentaire ")
+    #st.write("Cette visualisation montre la répartition des notes par classe de taille de commentaire. ")
     col1, col2 = st.columns(2)
     with col1:
         st.write("🔹Repartition taille du commentaire ")
-        st.image("taille_comm2.png", caption="Repartition taille du commentaire", use_column_width=True)
+        st.image("taille_comm2.png", caption="Repartition taille du commentaire", use_container_width=True)
     with col2:
         st.write("🔹 Repartition des notes clients par classe de taille")
-        st.image("taille_comm.png", caption="Repartition des notes clients par classe de taille du commentaire", use_column_width=True)
+        st.image("taille_comm.png", caption="Repartition des notes clients par classe de taille du commentaire", use_container_width=True)
 
    # 📌 Répartition des points d'exclamation
-    st.subheader("📌 Répartition de la classe nombre de point d'exclamation      ")
-    st.write("Cette visualisation montre la répartition des notes par classe de nombre d'exclamation dans le commentaire. ")
+    st.markdown("""
+        <h2 style='color: #1f487e; font-size: 26px; text-align: left;'>🟦 Répartition de la classe nombre de point d'exclamation </h2>
+        
+       Cette visualisation montre la répartition des notes par classe de nombre d'exclamation dans le commentaire
+        <br>       
+    """, unsafe_allow_html=True)
+
+    st.write(" ")
+
+    #st.subheader("📌 Répartition de la classe nombre de point d'exclamation      ")
+    #st.write("Cette visualisation montre la répartition des notes par classe de nombre d'exclamation dans le commentaire. ")
     col1, col2 = st.columns(2)
     with col1:
         st.write("🔹Repartition nombre de point d'exclamation  ")
-        st.image("pt_exclamation.png", caption="Repartition nombre de point d'exclamation ", use_column_width=True)
+        st.image("pt_exclamation.png", caption="Repartition nombre de point d'exclamation ", use_container_width=True)
     with col2:
         st.write("🔹 Repartition des notes clients par classe ")
-        st.image("pt_exclamation2.png", caption="Repartition des notes clients par classe de nombre de point d'exclamation", use_column_width=True)
+        st.image("pt_exclamation2.png", caption="Repartition des notes clients par classe de nombre de point d'exclamation", use_container_width=True)
 
     # 📌 Répartition des emoticones
-    st.subheader("📌 Répartition de la classe d'emoticones   ")
-    st.write("Cette visualisation montre la répartition des notes par classe d'émoticones. ")
+
+    st.markdown("""
+        <h2 style='color: #1f487e; font-size: 26px; text-align: left;'>🟦 Répartition de la classe d'emoticones</h2>
+        
+       Cette visualisation montre la répartition des notes par classe d'émoticones
+        <br>       
+    """, unsafe_allow_html=True)
+
+    st.write(" ")
+    #st.subheader("📌 Répartition de la classe d'emoticones   ")
+    #st.write("Cette visualisation montre la répartition des notes par classe d'émoticones. ")
     st.write("🔹 😊 Positif : 😃😍👍✨💚 ")
     st.write("🔹 😡 Négatif : 😠😢👎⚠️💔 ")
     #st.write("🔹  😐 Neutre : 😐🤔🧐🔍🔄 ")
@@ -742,36 +795,56 @@ if page == pages[5]:
     col1, col2 = st.columns(2)
     with col1:
         st.write("🔹Repartition de type d'emoticones ")
-        st.image("emoticone.png", caption="Repartition de type d'emoticones dans les commentaires  ", use_column_width=True)
+        st.image("emoticone.png", caption="Repartition de type d'emoticones dans les commentaires  ", use_container_width=True)
     with col2:
         st.write("🔹 Repartition des types d'emoticones par note ")
-        st.image("emoticone2.png", caption="Repartition des types d'emoticones par note ", use_column_width=True)
+        st.image("emoticone2.png", caption="Repartition des types d'emoticones par note ", use_container_width=True)
 
    
     # 📊 Heatmap des variables quantitatives
-    st.subheader("📊 Heatmap des variables quantitatives")
-    st.write("Cette heatmap permet d'analyser les corrélations entre les différentes variables numériques du dataset.")
-    st.image("heatmap.png", caption="Matrice de corrélation", use_column_width=True)
+
+    st.markdown("""
+        <h2 style='color: #1f487e; font-size: 26px; text-align: left;'>🟦 Heatmap des variables quantitatives</h2>
+        
+       Cette heatmap permet d'analyser les corrélations entre les différentes variables numériques du dataset
+        <br>       
+    """, unsafe_allow_html=True)
+
+    st.write(" ")
+
+    #st.subheader("📊 Heatmap des variables quantitatives")
+    #st.write("Cette heatmap permet d'analyser les corrélations entre les différentes variables numériques du dataset.")
+    st.image("heatmap.png", caption="Matrice de corrélation", use_container_width=True)
 
 
     # 🌍 WordClouds des commentaires
-    st.subheader("🌍 WordCloud des commentaires")
+    st.markdown("""
+        <h2 style='color: #1f487e; font-size: 26px; text-align: left;'>🌍 WordCloud des commentaires"</h2>
+        
+       Cette heatmap permet d'analyser les corrélations entre les différentes variables numériques du dataset
+        <br>       
+    """, unsafe_allow_html=True)
+
+    st.write(" ")
+
+
+    #st.subheader("🌍 WordCloud des commentaires")
     col1, col2 = st.columns(2)
     with col1:
         st.write("🔹 **Titres des commentaires**")
-        st.image("wordcloud.png", caption="Mots-clés des titres", use_column_width=True)
+        st.image("wordcloud.png", caption="Mots-clés des titres", use_container_width=True)
     with col2:
         st.write("🔹 **Commentaires négatifs (note 1 et 2)**")
-        st.image("wordcloud_negatif.png", caption="Mots-clés des avis négatifs", use_column_width=True)
+        st.image("wordcloud_negatif.png", caption="Mots-clés des avis négatifs", use_container_width=True)
 
 
     col3, col4 = st.columns(2)
     with col3:
         st.write("🔹 **Commentaires neutres (note 3)**")
-        st.image("wordcloud_note3.png", caption="Mots-clés des avis neutres", use_column_width=True)
+        st.image("wordcloud_note3.png", caption="Mots-clés des avis neutres",use_container_width=True)
     with col4:
         st.write("🔹 **Commentaires positifs (note 4 et 5)**")
-        st.image("wordcloud_note45.png", caption="Mots-clés des avis positifs", use_column_width=True)
+        st.image("wordcloud_note45.png", caption="Mots-clés des avis positifs", use_container_width=True)
 
 
 
@@ -975,15 +1048,16 @@ if page == pages[6] :
      #Appel de la fonction seulement si un modèle est sélectionné
      if option1 != " ":
       classR, accuracy, cmsm = prediction(option1, X_test_scaled, y_test, rfc, gbm, reg)
-      display = st.radio("Choix d'affichage", ('Accuracy', "Classification Report", 'Matrice de confusion'),key='radio1')
+      display = st.radio("Choix d'affichage", ( "Classification Report", 'Matrice de confusion'),key='radio1')
+      #display = st.radio("Choix d'affichage", ('Accuracy', "Classification Report", 'Matrice de confusion'),key='radio1')
 
-      if display == 'Accuracy':
-         if accuracy is not None:
-           st.markdown(f"<h4 style='color: #2ddff3;'>Accuracy: {accuracy:.3f}</h4>", unsafe_allow_html=True)
-         else:
-           st.write("Aucune précision disponible.")
+      # if display == 'Accuracy':
+      #    if accuracy is not None:
+      #      st.markdown(f"<h4 style='color: #2ddff3;'>Accuracy: {accuracy:.3f}</h4>", unsafe_allow_html=True)
+      #    else:
+      #      st.write("Aucune précision disponible.")
 
-      elif display == "Matrice de confusion":
+      if display == "Matrice de confusion":
          if cmsm is not None:
            st.markdown("<h4 style='color: #2ddff3'>Matrice de confusion</h4>", unsafe_allow_html=True)
            st.dataframe(cmsm)
@@ -1146,14 +1220,15 @@ if page == pages[6] :
    #Appel de la fonction seulement si un modèle est sélectionné
     if option2 != " ":
         classR2, accuracy2, cmsm2 = prediction(option2, X_test_scaled2, y_test2, rfc2, gbm2, reg2)
-        display2 = st.radio("Choix d'affichage", ('Accuracy', "Classification Report", 'Matrice de confusion'),key='radio2')
-        if display2 == 'Accuracy':
-          if accuracy2 is not None:
-            st.markdown(f"<h4 style='color: #2ddff3;'>Accuracy: {accuracy2:.3f}</h4>", unsafe_allow_html=True)
-          else:
-           st.write("Aucune précision disponible.")
+        display2 = st.radio("Choix d'affichage", ( "Classification Report", 'Matrice de confusion'),key='radio2')
+        #display2 = st.radio("Choix d'affichage", ('Accuracy', "Classification Report", 'Matrice de confusion'),key='radio2')
+        # if display2 == 'Accuracy':
+        #   if accuracy2 is not None:
+        #     st.markdown(f"<h4 style='color: #2ddff3;'>Accuracy: {accuracy2:.3f}</h4>", unsafe_allow_html=True)
+        #   else:
+        #    st.write("Aucune précision disponible.")
 
-        elif display2 == "Matrice de confusion":
+        if display2 == "Matrice de confusion":
           if cmsm2 is not None:
             st.markdown("<h4 style='color: #2ddff3'>Matrice de confusion</h4>", unsafe_allow_html=True)
             st.dataframe(cmsm2)
